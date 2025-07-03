@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced CSS & JS Tasks</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🌐 Responsive & Interactive Web</h1>
+    <p>Quiz App | API Integration | Responsive Design</p>
+  </header>
+
+  <main>
+    <!-- QUIZ SECTION -->
+    <section class="quiz-section">
+      <h2>🧠 Interactive Quiz</h2>
+      <div class="quiz-box">
+        <p id="question">Loading question...</p>
+        <div id="options" class="options"></div>
+        <button onclick="nextQuestion()">Next Question</button>
+        <p id="score"></p>
+      </div>
+    </section>
+
+    <!-- API SECTION -->
+    <section class="api-section">
+      <h2>😂 Get a Random Joke</h2>
+      <div class="api-box">
+        <p id="joke-display">Click below to get a joke!</p>
+        <button onclick="getJoke()">Fetch Joke</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Interactive Webpage. Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

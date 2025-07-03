@@ -1,0 +1,203 @@
+/* Reset and Base Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #f5f7fa, #c3cfe2);
+  color: #222;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Header with Gradient Glow */
+header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Container */
+main {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Stylish Section Headings */
+h2 {
+  font-size: 2.2rem;
+  color: #5f27cd;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Glassmorphism Cards */
+.quiz-box,
+.api-box {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  margin-bottom: 50px;
+  animation: fadeIn 1s ease;
+  transition: transform 0.3s;
+}
+
+.quiz-box:hover,
+.api-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Quiz */
+#question {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.options button {
+  background: linear-gradient(145deg, #e0e0e0, #f8f8f8);
+  border: none;
+  color: #333;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+}
+
+.options button:hover {
+  background: #7f5af0;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* General Buttons */
+button {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background: linear-gradient(to left, #00c6ff, #0072ff);
+  transform: scale(1.05);
+}
+
+/* Joke Display */
+#joke-display {
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+  animation: fadeInUp 0.5s ease-in;
+  min-height: 60px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 50px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .quiz-box,
+  .api-box {
+    padding: 25px;
+  }
+
+  button,
+  .options button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 40px 15px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .quiz-box,
+  .api-box {
+    padding: 20px;
+  }
+
+  #question {
+    font-size: 1.1rem;
+  }
+}
